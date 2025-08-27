@@ -6,7 +6,7 @@ export function Hero() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Professional House Cleaning Services</h1>
-          <p className="text-xl mb-8">We make your home sparkle, so you don't have to!</p>
+          <p className="text-xl mb-8">We make your home sparkle, so you don&apost have to!</p>
           <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
             Get a Free Quote
           </Button>

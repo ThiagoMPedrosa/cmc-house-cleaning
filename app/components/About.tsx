@@ -16,7 +16,7 @@ export function About() {
               CMC House Cleaning has been providing top-notch cleaning services for over 10 years. Our team of experienced and dedicated professionals ensures that your home or office is spotless and hygienic.
             </p>
             <p className="text-lg text-gray-700 mb-4">
-              We use eco-friendly cleaning products and state-of-the-art equipment to deliver exceptional results while being mindful of the environment and your health.
+              We use eco friendly cleaning products and state-of-the-art equipment to deliver exceptional results while being mindful of the environment and your health.
             </p>
             <p className="text-lg text-gray-700">
               Choose CMC House Cleaning for a cleaner, healthier, and more comfortable living or working space.

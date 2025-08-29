@@ -98,7 +98,7 @@ export function Testimonials() {
                     <p className="text-gray-700 mb-4 flex-grow">"{testimonial.text}"</p>
                     <div className="flex justify-between items-center mt-auto">
                       <p className="font-semibold text-green-600">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500">{testimonial.date}</p>
+                      <p className="text-sm text-gray-500">{new Date(testimonial.date).toISOString().slice(0, 10)}</p>
                     </div>
                   </CardContent>
                 </Card>

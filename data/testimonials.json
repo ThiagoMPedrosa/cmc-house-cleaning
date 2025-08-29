@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Jennifer M.",
+    "text": "CMC House Cleaning has been cleaning our home for over two years now. They are always professional, thorough, and reliable. I highly recommend their services!",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "name": "Robert K.",
+    "text": "Excellent service! The team arrived on time and did an amazing job cleaning our office space. Everything was spotless when they finished.",
+    "date": "2024-01-10"
+  },
+  {
+    "id": 3,
+    "name": "Maria S.",
+    "text": "I was impressed with their attention to detail during our move-out cleaning. They helped us get our full security deposit back. Thank you CMC!",
+    "date": "2024-01-08"
+  },
+  {
+    "id": 4,
+    "name": "David L.",
+    "text": "Professional, reliable, and affordable. CMC House Cleaning has made my life so much easier with their regular cleaning service.",
+    "date": "2024-01-05"
+  },
+  {
+    "id": 5,
+    "name": "Sarah W.",
+    "text": "The deep cleaning service was fantastic. They cleaned areas I didn't even think about. My house has never looked better!",
+    "date": "2024-01-03"
+  },
+  {
+    "id": 6,
+    "name": "Michael R.",
+    "text": "Great communication and excellent work. The team is trustworthy and does a thorough job every time they come.",
+    "date": "2023-12-28"
+  },
+  {
+    "id": 7,
+    "name": "Lisa H.",
+    "text": "CMC cleaned our home after a renovation project. They did an incredible job removing all the construction dust and debris.",
+    "date": "2023-12-25"
+  },
+  {
+    "id": 8,
+    "name": "James T.",
+    "text": "Reliable and consistent service. I've been using CMC for my office cleaning needs for months and they never disappoint.",
+    "date": "2023-12-20"
+  },
+  {
+    "id": 9,
+    "name": "Amanda C.",
+    "text": "The team is professional and efficient. They use eco-friendly products which is important to our family. Highly recommended!",
+    "date": "2023-12-18"
+  },
+  {
+    "id": 10,
+    "name": "Kevin B.",
+    "text": "Outstanding service from start to finish. Fair pricing and excellent results. CMC House Cleaning exceeded our expectations.",
+    "date": "2023-12-15"
+  }
+]

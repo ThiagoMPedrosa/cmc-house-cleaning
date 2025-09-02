@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
+import { getContactEmailHtml } from "@/utils/emailTemplate/getContactEmailHtml"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-// Use environment variables for sender and recipient email addresses
 const EMAIL_SENDER = process.env.EMAIL_SENDER || "no-reply@email.com"
 const EMAIL_RECIPIENT = process.env.EMAIL_RECIPIENT || "your@email.com"
 
@@ -15,10 +15,11 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: EMAIL_SENDER, // Set in .env.local or deployment environment
-      to: EMAIL_RECIPIENT, // Set in .env.local or deployment environment
+      from: EMAIL_SENDER,
+      to: [EMAIL_RECIPIENT],
       subject: `New Contact Form Submission from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}\nReply_to: ${email}`,
+      html: getContactEmailHtml({ name, email, phone, service, message }),
+      replyTo: `${email}`,
     })
 
     return NextResponse.json({ success: true })

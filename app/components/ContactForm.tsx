@@ -30,17 +30,29 @@ export function ContactForm() {
     setFormData((prevState) => ({ ...prevState, service: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     setMessage("")
 
-    // Simulate form submission
-    setTimeout(() => {
-      setMessage("Thank you for your inquiry! We'll contact you within 24 hours.")
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+      const data = await response.json()
+      if (response.ok && data.success) {
+        setMessage("Thank you for your inquiry! We'll contact you within 24 hours.")
+        setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+      } else {
+        setMessage(data.error || "Failed to send your inquiry. Please try again.")
+      }
+    } catch (error) {
+      setMessage("An error occurred. Please try again.")
+    } finally {
       setIsSubmitting(false)
-    }, 1000)
+    }
   }
 
   return (

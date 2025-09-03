@@ -38,7 +38,7 @@ export function About() {
           </div>
           <div className="lg:w-1/2">
             <p className="text-lg text-gray-700 mb-6">
-              CMC House Cleaning has been serving Maryland families and businesses with reliable, professional cleaning
+              CMC House Cleaning has been serving Colorado families and businesses with reliable, professional cleaning
               services. We understand that your time is valuable, and a clean environment is essential for your comfort
               and productivity.
             </p>

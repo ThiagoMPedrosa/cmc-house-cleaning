@@ -39,7 +39,7 @@ export function Services() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-4 text-green-600">Our Cleaning Services</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          We provide comprehensive cleaning services for residential and commercial properties throughout Maryland, with
+          We provide comprehensive cleaning services for residential and commercial properties throughout Colorado, with
           a focus on quality, reliability, and customer satisfaction.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

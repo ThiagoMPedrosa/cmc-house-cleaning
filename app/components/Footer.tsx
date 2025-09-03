@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">CMC House Cleaning</h3>
             <p className="mb-4">
-              Professional cleaning services for residential and commercial properties throughout Maryland. Reliable,
+              Professional cleaning services for residential and commercial properties throughout Colorado. Reliable,
               thorough, and affordable.
             </p>
             <div className="flex space-x-4">

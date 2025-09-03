@@ -6,7 +6,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'CMC House Cleaning',
-  description: 'Cleaning Services in Colorado Springs, CO - Residential & Commercial',
+  description: 'Cleaning Services in Colorado, Residential & Commercial',
   generator: 'Next.js',
 }
 

@@ -6,6 +6,17 @@ import { createAppointment, getAllAppointments, updateAppointmentStatus } from '
 
 const rl = readline.createInterface({ input, output });
 
+import Script from "next/script"
+
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+      <Component {...pageProps} />
+    </>
+  )
+}
+
 async function displayMenu() {
   console.log('\n--- House Cleaning Service ---');
   console.log('1. Add Cleaner');

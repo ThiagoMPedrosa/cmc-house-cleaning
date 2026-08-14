@@ -4,8 +4,8 @@ import { getContactEmailHtml } from "@/utils/emailTemplate/getContactEmailHtml"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-const EMAIL_SENDER = process.env.EMAIL_SENDER || "no-reply@email.com"
-const EMAIL_RECIPIENT = process.env.EMAIL_RECIPIENT || "your@email.com"
+const EMAIL_SENDER = process.env.RESEND_EMAIL_SENDER || "no-reply@email.com"
+const EMAIL_RECIPIENT = process.env.RESEND_EMAIL_RECIPIENT || "your@email.com"
 
 export async function POST(request: Request) {
   try {

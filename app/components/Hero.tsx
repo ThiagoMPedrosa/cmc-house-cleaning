@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section className="bg-green-600 text-white">
-      <div className="container mx-auto px-4 sm:px-6 pt-5 pb-10 sm:pt-10 sm:pb-14 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 pt-5 pb-10 sm:pt-10 sm:pb-14 lg:py-18">
 
         <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8 lg:gap-14">
 

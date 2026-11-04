@@ -1,32 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CMC House Cleaning
 
-## Getting Started
+Website for CMC House Cleaning, a residential cleaning business in Denver, Colorado. It presents the business's services and testimonials, and lets visitors request a free estimate.
 
-First, run the development server:
+**Live site:** [cmchousecleaning.com](https://cmchousecleaning.com/)
+
+## Features
+
+- **Landing page** with services, an about section, testimonials and contact details
+- **Contact form** that emails each request to the business through [Resend](https://resend.com), protected from bots with [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/)
+- **Testimonials** stored in a serverless Postgres database ([Neon](https://neon.tech)), with a form for clients to submit new ones
+- **Responsive UI** built with Tailwind CSS and shadcn/ui (Radix) components, with form validation using React Hook Form and Zod
+
+## Tech stack
+
+Next.js (App Router) · TypeScript · React · Tailwind CSS · Neon Postgres · Resend · Cloudflare Turnstile · Vercel
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-## Learn More
+Create a `.env.local` file with these variables. Secrets are never committed to the repository.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+DATABASE_URL=
+RESEND_API_KEY=
+RESEND_EMAIL_RECIPIENT=
+RESEND_EMAIL_SENDER=
+TURNSTILE_SECRET_KEY=
+NEXT_PUBLIC_TURNSTILE_SITE_KEY=
+```
